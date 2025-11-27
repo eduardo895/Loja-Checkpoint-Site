@@ -3,190 +3,155 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    path: '/Loja-Checkpoint-Site/blog',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog', '5d8'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
+    path: '/Loja-Checkpoint-Site/blog/archive',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/archive', '86e'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    path: '/Loja-Checkpoint-Site/blog/authors',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/authors', '6f0'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    path: '/Loja-Checkpoint-Site/blog/authors/all-sebastien-lorber-articles',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/authors/all-sebastien-lorber-articles', 'b84'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    path: '/Loja-Checkpoint-Site/blog/authors/yangshun',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/authors/yangshun', '5a9'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    path: '/Loja-Checkpoint-Site/blog/first-blog-post',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/first-blog-post', '5dc'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    path: '/Loja-Checkpoint-Site/blog/long-blog-post',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/long-blog-post', '943'),
     exact: true
   },
   {
-    path: '/blog',
-    component: ComponentCreator('/blog', 'b2f'),
+    path: '/Loja-Checkpoint-Site/blog/mdx-blog-post',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/mdx-blog-post', '470'),
     exact: true
   },
   {
-    path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', '182'),
+    path: '/Loja-Checkpoint-Site/blog/tags',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/tags', 'eb5'),
     exact: true
   },
   {
-    path: '/blog/authors',
-    component: ComponentCreator('/blog/authors', '0b7'),
+    path: '/Loja-Checkpoint-Site/blog/tags/docusaurus',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/tags/docusaurus', '682'),
     exact: true
   },
   {
-    path: '/blog/authors/all-sebastien-lorber-articles',
-    component: ComponentCreator('/blog/authors/all-sebastien-lorber-articles', '4a1'),
+    path: '/Loja-Checkpoint-Site/blog/tags/facebook',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/tags/facebook', '843'),
     exact: true
   },
   {
-    path: '/blog/authors/yangshun',
-    component: ComponentCreator('/blog/authors/yangshun', 'a68'),
+    path: '/Loja-Checkpoint-Site/blog/tags/hello',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/tags/hello', '6dc'),
     exact: true
   },
   {
-    path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '89a'),
+    path: '/Loja-Checkpoint-Site/blog/tags/hola',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/tags/hola', 'a50'),
     exact: true
   },
   {
-    path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', '9ad'),
+    path: '/Loja-Checkpoint-Site/blog/welcome',
+    component: ComponentCreator('/Loja-Checkpoint-Site/blog/welcome', '1c0'),
     exact: true
   },
   {
-    path: '/blog/mdx-blog-post',
-    component: ComponentCreator('/blog/mdx-blog-post', 'e9f'),
+    path: '/Loja-Checkpoint-Site/markdown-page',
+    component: ComponentCreator('/Loja-Checkpoint-Site/markdown-page', '07a'),
     exact: true
   },
   {
-    path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '287'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '704'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/facebook',
-    component: ComponentCreator('/blog/tags/facebook', '858'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', '299'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/hola',
-    component: ComponentCreator('/blog/tags/hola', '00d'),
-    exact: true
-  },
-  {
-    path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', 'd2b'),
-    exact: true
-  },
-  {
-    path: '/markdown-page',
-    component: ComponentCreator('/markdown-page', '3d7'),
-    exact: true
-  },
-  {
-    path: '/docs',
-    component: ComponentCreator('/docs', '733'),
+    path: '/Loja-Checkpoint-Site/docs',
+    component: ComponentCreator('/Loja-Checkpoint-Site/docs', '477'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', '7e6'),
+        path: '/Loja-Checkpoint-Site/docs',
+        component: ComponentCreator('/Loja-Checkpoint-Site/docs', '7a2'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', 'ba6'),
+            path: '/Loja-Checkpoint-Site/docs',
+            component: ComponentCreator('/Loja-Checkpoint-Site/docs', '857'),
             routes: [
               {
-                path: '/docs/category/tutorial---basics',
-                component: ComponentCreator('/docs/category/tutorial---basics', '20e'),
+                path: '/Loja-Checkpoint-Site/docs/category/tutorial---basics',
+                component: ComponentCreator('/Loja-Checkpoint-Site/docs/category/tutorial---basics', '2fa'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/category/tutorial---extras',
-                component: ComponentCreator('/docs/category/tutorial---extras', '9ad'),
+                path: '/Loja-Checkpoint-Site/docs/category/tutorial---extras',
+                component: ComponentCreator('/Loja-Checkpoint-Site/docs/category/tutorial---extras', '9fe'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '61d'),
+                path: '/Loja-Checkpoint-Site/docs/intro',
+                component: ComponentCreator('/Loja-Checkpoint-Site/docs/intro', 'cee'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/congratulations',
-                component: ComponentCreator('/docs/tutorial-basics/congratulations', '458'),
+                path: '/Loja-Checkpoint-Site/docs/tutorial-basics/congratulations',
+                component: ComponentCreator('/Loja-Checkpoint-Site/docs/tutorial-basics/congratulations', '731'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/create-a-blog-post',
-                component: ComponentCreator('/docs/tutorial-basics/create-a-blog-post', '108'),
+                path: '/Loja-Checkpoint-Site/docs/tutorial-basics/create-a-blog-post',
+                component: ComponentCreator('/Loja-Checkpoint-Site/docs/tutorial-basics/create-a-blog-post', 'cf0'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/create-a-document',
-                component: ComponentCreator('/docs/tutorial-basics/create-a-document', '8fc'),
+                path: '/Loja-Checkpoint-Site/docs/tutorial-basics/create-a-document',
+                component: ComponentCreator('/Loja-Checkpoint-Site/docs/tutorial-basics/create-a-document', 'd02'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/create-a-page',
-                component: ComponentCreator('/docs/tutorial-basics/create-a-page', '951'),
+                path: '/Loja-Checkpoint-Site/docs/tutorial-basics/create-a-page',
+                component: ComponentCreator('/Loja-Checkpoint-Site/docs/tutorial-basics/create-a-page', 'b0a'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/docs/tutorial-basics/deploy-your-site', '4f5'),
+                path: '/Loja-Checkpoint-Site/docs/tutorial-basics/deploy-your-site',
+                component: ComponentCreator('/Loja-Checkpoint-Site/docs/tutorial-basics/deploy-your-site', 'b4f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/markdown-features',
-                component: ComponentCreator('/docs/tutorial-basics/markdown-features', 'b05'),
+                path: '/Loja-Checkpoint-Site/docs/tutorial-basics/markdown-features',
+                component: ComponentCreator('/Loja-Checkpoint-Site/docs/tutorial-basics/markdown-features', '839'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-extras/manage-docs-versions',
-                component: ComponentCreator('/docs/tutorial-extras/manage-docs-versions', '978'),
+                path: '/Loja-Checkpoint-Site/docs/tutorial-extras/manage-docs-versions',
+                component: ComponentCreator('/Loja-Checkpoint-Site/docs/tutorial-extras/manage-docs-versions', '9a0'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-extras/translate-your-site',
-                component: ComponentCreator('/docs/tutorial-extras/translate-your-site', 'f9a'),
+                path: '/Loja-Checkpoint-Site/docs/tutorial-extras/translate-your-site',
+                component: ComponentCreator('/Loja-Checkpoint-Site/docs/tutorial-extras/translate-your-site', '388'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -197,8 +162,8 @@ export default [
     ]
   },
   {
-    path: '/',
-    component: ComponentCreator('/', '2e1'),
+    path: '/Loja-Checkpoint-Site/',
+    component: ComponentCreator('/Loja-Checkpoint-Site/', 'a49'),
     exact: true
   },
   {

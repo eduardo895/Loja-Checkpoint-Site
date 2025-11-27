@@ -28,10 +28,12 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "url": "https://your-docusaurus-site.example.com",
-  "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "url": "https://eduardo895.github.io",
+  "baseUrl": "/Loja-Checkpoint-Site/",
+  "organizationName": "eduardo895",
+  "projectName": "Loja-Checkpoint-Site",
+  "deploymentBranch": "gh-pages",
+  "trailingSlash": false,
   "onBrokenLinks": "throw",
   "i18n": {
     "defaultLocale": "en",

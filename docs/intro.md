@@ -1,47 +1,37 @@
 ---
 sidebar_position: 1
+sidebar_label: Introdução
 ---
 
-# Tutorial Intro
+# Introdução
 
-Let's discover **Docusaurus in less than 5 minutes**.
+A **Loja Checkpoint** é uma aplicação de _loja digital de videojogos_ em modo consola,
+desenvolvida em **Python** como parte do TP2 da unidade curricular.
 
-## Getting Started
+O objetivo principal é simular o funcionamento de uma loja online real:
 
-Get started by **creating a new site**.
+- gestão de utilizadores (registo, login, sessão ativa);
+- catálogo de produtos (jogos) com informações básicas;
+- carrinho de compras e checkout;
+- wishlist para guardar jogos favoritos;
+- comentários e avaliações;
+- histórico detalhado de compras;
+- persistência de dados através da **Supabase**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+:::info
+Este site (TP3) serve para **publicitar** a aplicação e **documentar** o seu
+funcionamento, arquitetura e processo de desenvolvimento colaborativo.
+:::
 
-### What you'll need
+## Objetivos do projeto
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- Praticar desenvolvimento em Python com separação de responsabilidades;
+- Utilizar um backend “as a service” (Supabase);
+- Aplicar boas práticas de **Git** e trabalho colaborativo;
+- Explorar a criação de um site de documentação com **Docusaurus**.
 
-## Generate a new site
+## Público-alvo
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- Utilizadores que pretendam testar a aplicação em consola;
+- Colegas e professores que queiram analisar o código;
+- Qualquer pessoa interessada em ver um exemplo de integração Python + Supabase.
