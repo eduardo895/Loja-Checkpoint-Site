@@ -1,16 +1,15 @@
 
-// @ts-check
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Loja Checkpoint – Docs',
+  title: 'Loja Checkpoint – Docs',              
   tagline: 'Documentação do app (terminal Python)',
   favicon: 'img/favicon.ico',
 
-  // Produção: GitHub Pages (project site)
-  url: 'https://eduardo895.github.io',
-  baseUrl: '/Loja-Checkpoint-Site/', // tem que começar e terminar com '/'. [3](https://docusaurus.io/docs/deployment)
+  // ====== Deploy em GitHub Pages ======
+  url: 'https://eduardo895.github.io',          
+  baseUrl: '/Loja-Checkpoint-Site/',            
 
-  // Para deploy automático em gh-pages
+   // ramo de publicação
   organizationName: 'eduardo895',
   projectName: 'Loja-Checkpoint-Site',
   deploymentBranch: 'gh-pages',
@@ -18,46 +17,51 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Idioma (opcional)
-  i18n: {
-    defaultLocale: 'pt-PT',
-    locales: ['pt-PT'],
-  },
+  // (opcional) i18n
+  i18n: { defaultLocale: 'pt-PT', locales: ['pt-PT'] },
 
+  // ====== Preset classic ======
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      '@docusaurus/preset-classic',
+      {
         docs: {
-          // Servir docs na raiz do site
+          // servir a documentação na raiz
           routeBasePath: '/',
-          // Usa string de caminho (compatível com ESM)
-          sidebarPath: './sidebars.js',
+          // usa require.resolve (CommonJS compatível)
+          sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: false,
         theme: {
-          // Caminho relativo para CSS
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
+  // ====== Tema ======
   themeConfig: {
     navbar: {
       title: 'Docs Loja Checkpoint',
       items: [
-        { href: 'https://github.com/Deni-jpg/Loja-Checkpoint', label: 'Código do App', position: 'right' },
-        // API gerada por pdoc em static/api
-        { href: '/Loja-Checkpoint-Site/api/index.html', label: 'API (pdoc)', position: 'right' },
+        {
+          href: 'https://github.com/Deni-jpg/Loja-Checkpoint',
+          label: 'Código do App',
+          position: 'right',
+        },
+        {
+          href: '/Loja-Checkpoint-Site/api/index.html', // pdoc gerado em static/api
+          label: 'API (pdoc)',
+          position: 'right',
+        },
       ],
     },
-    // (opcional) Prism: se quiseres, adiciona depois — não é necessário para compilar
-    // prism: {
-    //   theme: (await import('prism-react-renderer')).themes.github,
-    //   darkTheme: (await import('prism-react-renderer')).themes.dracula,
-    // },
-   },
+    footer: {
+      style: 'dark',
+      links: [],
+      copyright: `© ${new Date().getFullYear()} Loja Checkpoint`,
+    },
+  },
 };
 
+module.exports = config;

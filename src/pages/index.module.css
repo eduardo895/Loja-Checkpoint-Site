@@ -1,19 +1,47 @@
-.heroBanner {
-  padding: 4rem 0;
+
+.hero {
+  padding: 6rem 1rem 3rem;
   text-align: center;
-  background-color: #0b5fff;
-  color: white;
+  background: linear-gradient(135deg, #1b2845 0%, #2e3a59 60%, #3b4371 100%);
+  color: #fff;
 }
-
-.section {
-  margin-top: 3rem;
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
-
-.buttons {
-  margin-top: 2rem;
+.subtitle {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  margin-bottom: 1.75rem;
 }
-
-.hero__subtitle {
-  margin-top: 1rem;
-  font-size: 1.3rem;
+.ctaRow {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.features {
+  padding: 3rem 1rem 5rem;
+}
+.grid {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.card {
+  background: var(--ifm-card-background-color, #fff);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: var(--ifm-global-shadow-md);
+}
+.card h3 {
+  margin-top: 0;
+}
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
 }
