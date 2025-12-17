@@ -1,0 +1,58 @@
+
+name: Deploy Docusaurus to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'README.md'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Checkout do site (raiz do repo)
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # 2) Clonar o app Python (fonte da API)
+      - name: Clone Python app
+        run: |
+          git clone --depth 1 https://github.com/Deni-jpg/Loja-Checkpoint.git app
+
+      # 3) Python + pdoc: gerar API em static/api
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install pdoc3
+        run: pip install pdoc3
+
+      - name: Build API docs (pdoc)
+        run: |
+          mkdir -p static/api
+          pdoc ./app -o static/api --force
+        # pdoc gera HTML a partir das docstrings (auto‑contido). Ver docs: pdoc.dev [1](https://pdoc.dev/docs/pdoc.html)
+
+      # 4) Node 20 + build do Docusaurus (na raiz)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build website
+        run: npm run build
+
+      # 5) Deploy para gh-pages
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish          publish_dir: build
+          user_name: github-actions[bot]
